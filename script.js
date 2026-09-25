@@ -19,10 +19,8 @@ function addTodo() {
 
         let button_length =button.nextElementSibling.children.length
         
-        if (button_length == 1){
-            console.log(button_length)
-            
-        }if (button_length == 2){
+         
+        if (button_length == 2){
             
             notice.remove()
             
