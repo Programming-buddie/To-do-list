@@ -1,0 +1,44 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    height: 400px;
+    margin: 3rem auto;
+    width: fit-content;
+    background-color: cadetblue;
+    border-radius: 50px;
+    padding: 40px;
+}
+#user_message {
+    height: 50px;
+    border-radius: 10px;
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: blue;
+    border-style: none;
+    margin-right: 20px;
+    font-size: 26px;
+}
+#add{
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    border: none;
+    outline: 2px solid rgb(30, 190, 38);
+}
+.message{
+    /* height: 200px; */
+    width: 200px;
+    background-color: red;
+    font-size: 28px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 15px;
+}
+button{
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    border: none;
+    outline: 2px solid rgb(30, 190, 38);
+}
