@@ -11,16 +11,17 @@ function addTodo() {
     
     table.innerText = userMessage.value
     let notice = document.createElement("h2")
-    
-    if (userMessage.value === ""){
+    let button_length =button.nextElementSibling.children.length
+
+    if (userMessage.value === "" ){
         
         notice.innerText="Enter a task"
         button.nextElementSibling.append(notice)
 
-        let button_length =button.nextElementSibling.children.length
+        console.log(userMessage.value)
         
          
-        if (button_length == 2){
+        if (button_length == 1){
             
             notice.remove()
             
@@ -28,18 +29,24 @@ function addTodo() {
     }
     else{
         message.style.display = "block"
-       message.append(table, newButton)
-       userMessage.value = ""
-
+        message.append(table, newButton)
+        userMessage.value = ""
+        const setIt = userMessage.setAttribute("onfocus", "true")
+        if (button_length == 1){
+            console.log(setIt)
+        }
+        else{
+            console.log("no")
+            console.log(button_length)
+        }
         notice.style.display = "none"
         newButton.innerText = "delete"
         
-        newButton.setAttribute("value", "delete")
-        console.log(newButton.value)
-        console.log(newButton)
+        
+        
         newButton.addEventListener("click", ()=>{
-        message.removeChild(table)
-        message.removeChild(newButton)
+            message.removeChild(table)
+            message.removeChild(newButton)
         
        })
     
