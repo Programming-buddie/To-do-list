@@ -27,10 +27,10 @@ This is a website i built using what i learned in JavaScript.
 - If you want to delete the task, you can press the delete button under the task.
 
 ### About
-- It is a website to add task and then you can delete wen you are done.
+- It is a website to add task and then you can delete when you are done.
 
 ### Links
-- [Live Url]()
+- [Live Url](https://programming-buddie.github.io/To-do-list/)
 
 ## Author
 
